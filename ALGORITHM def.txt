@@ -1,0 +1,20 @@
+ALGORITHM algorithm_name
+VAR
+    i,j,n:INTEGER
+    set1: ARRAY_OF type[INTEGER];
+    set2: ARRAY_OF type[INTEGER];
+BEGIN
+    n=0
+    write('give some nomber for the tab2')
+    read(set1)
+    write('give some nomber for the tab1')
+    read(set2)
+    FOR i FROM 0 TO set1.length-1  DO
+        FOR j FROM 0 TO set2.length-1   DO
+            if set1[i]<>set2[j] DO
+            n=n+set1[i]<>set2[j] 
+        END_FOR
+        set_instructions
+    END_FOR
+    write(n)
+END

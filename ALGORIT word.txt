@@ -1,0 +1,22 @@
+ALGORITHM 
+VAR
+    str:STRING;
+    tab : ARRAY_OF type[char];
+    i,v,w:INTEGER;
+BEGIN
+    tab:={'a','e','o','u','y','A','E','O','U','Y'}
+    w=1;
+    write("Give a string")
+    read(str)
+    FOR i FROM 0 TO str.length-1 DO
+    IF (str[i]=' ') THEN
+    w=w+1
+    END_IF
+    for j FROM 0 TO tab.length-1 DO
+    IF (str[i]=tab[j]) THEN
+    v=v+1
+    END_IF
+    END FOR
+    write(w 'worled')
+    write(v 'vowels')
+END
